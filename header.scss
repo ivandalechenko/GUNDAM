@@ -17,6 +17,16 @@
         width: fit-content;
         color: #072746;
 
+        @media(max-width: 1100px) {
+            font-size: 48px;
+            padding: 4px 24px;
+        }
+
+        @media(max-width: 1000px) {
+            font-size: 32px;
+            padding: 4px 24px;
+        }
+
         &_wrapper {
             width: 100%;
             display: flex;
@@ -29,13 +39,21 @@
 
     &_links {
         transform: skew(-10deg);
-        padding: 8px 32px;
         background-color: #B4D1F9;
         border: 8px solid #072746;
         width: calc(100% - 160px);
         padding: 24px 32px;
         position: relative;
         top: -50px;
+
+        @media(max-width: 920px) {
+            padding: 24px
+        }
+
+        @media(max-width: 420px) {
+            width: calc(100% - 60px);
+            top: -20px;
+        }
 
         &_inner {
             display: flex;
@@ -60,6 +78,12 @@
         align-items: center;
         font-style: italic;
         font-weight: 700;
+
+        &_pc {
+            @media(max-width: 920px) {
+                display: none;
+            }
+        }
     }
 
 
