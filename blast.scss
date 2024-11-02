@@ -1,0 +1,57 @@
+.blast {
+    height: 1400px;
+    background: url('/img/bg2.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    padding-top: 700px;
+
+    &_wrapper {
+        padding: 16px;
+        margin-top: 16px;
+        background-color: #fff;
+    }
+
+    &_header {
+        width: 100%;
+        max-width: 640px;
+        padding: 6px;
+        text-align: center;
+        transform: skew(-10deg);
+        background-color: #072746;
+        border: 8px solid #B4D1F9;
+        color: #B4D1F9;
+        font-size: 64px;
+        font-family: 'kubo';
+        margin: 0 auto;
+        position: relative;
+        // left: 50px;
+        // top: -50px;
+        z-index: 2;
+    }
+
+    &_p {
+        transform: skew(-10deg);
+        background-color: #B4D1F9;
+        border: 8px solid #072746;
+        color: #072746;
+        font-size: 64px;
+        font-family: 'creato';
+        font-size: 24px;
+        font-weight: 700;
+        position: relative;
+        left: 50px;
+        top: -30px;
+        z-index: 1;
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 32px 48px;
+
+        span {
+            font-family: 'creato';
+            font-weight: 900;
+            color: #072746;
+        }
+    }
+}
