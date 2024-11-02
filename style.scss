@@ -1,0 +1,26 @@
+@use 'fonts';
+@use 'null';
+@use 'header';
+@use 'hero';
+
+.allMask {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 50vh;
+    position: fixed;
+    z-index: 99;
+
+    &_img {
+        img {
+            pointer-events: none;
+            min-height: 100vh;
+            min-width: 100vw;
+        }
+    }
+}
+
+.content {
+    padding: 8px;
+    background-color: #000;
+}

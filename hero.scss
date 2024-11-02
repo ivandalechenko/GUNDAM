@@ -1,0 +1,94 @@
+.hero {
+    height: 1400px;
+    background: url('/img/bg1.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    // top: -2px;
+    z-index: 1;
+    padding-top: 20px;
+
+    &_wrapper {
+        padding: 16px;
+        background-color: #fff;
+    }
+
+    &_header {
+        margin-top: 120px;
+        transform: skew(-10deg);
+        padding: 24px;
+        padding-left: 96px;
+        position: relative;
+        left: -86px;
+        background-color: #072746;
+        border: 8px solid #B4D1F9;
+        width: fit-content;
+        color: #B4D1F9;
+        font-size: 64px;
+        font-family: 'kubo';
+    }
+
+    &_run {
+        margin-top: 100px;
+        transform: rotate(-5deg);
+
+        &_line {
+            // border-top: 12px solid #463F07;
+            display: flex;
+            transform: skew(-10deg);
+            width: 100%;
+            justify-content: center;
+
+
+
+            &_element {
+                color: #463F07;
+                font-size: 64px;
+                font-family: 'kubo';
+                background-color: #FFD97E;
+                width: fit-content;
+                padding: 8px 32px;
+                border-right: 12px solid #463F07;
+                border-top: 12px solid #463F07;
+                white-space: nowrap;
+                width: 650px;
+            }
+
+            &:last-child {
+                .hero_run_line_element {
+                    border-bottom: 12px solid #463F07;
+                }
+            }
+
+            &_1 {
+                animation: hero_run_1 20s infinite linear;
+
+                @keyframes hero_run_1 {
+                    0% {
+                        translate: 0px 0px;
+                    }
+
+                    100% {
+                        translate: -662px 0px;
+                    }
+                }
+            }
+
+            &_2 {
+                animation: hero_run_2 20s infinite linear;
+
+                @keyframes hero_run_2 {
+                    0% {
+                        translate: 0px 0px;
+                    }
+
+                    100% {
+                        translate: 662px 0px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
